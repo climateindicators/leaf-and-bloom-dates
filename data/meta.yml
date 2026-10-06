@@ -1,0 +1,101 @@
+indicator:
+  name: Leaf and Bloom Dates
+  slug: leaf-and-bloom-dates
+  publisher: U.S. Environmental Protection Agency
+  source_page: https://19january2025snapshot.epa.gov/climate-indicators/climate-change-indicators-leaf-and-bloom-dates/index.html
+  technical_documentation: https://19january2025snapshot.epa.gov/system/files/documents/2024-06/leaf-bloom-dates_documentation.pdf
+  rights: Public domain, work of the U.S. Government (17 U.S.C. 105)
+datasets:
+- file: first_leaf_bloom_deviation_contiguous_48.csv
+  figure: Figure 1
+  figure_title: Figure 1. First Leaf and Bloom Dates in the Contiguous 48 States,
+    1900-2023
+  source_file: leaf-bloom_fig-1.csv
+  source_sha256: 316c7e6559b7d9788ae29c75e82962945b7882ad97a3f999855f7ac319747b49
+  source_encoding: UTF-8
+  data_source: Schwartz, 2024
+  web_update: June 2024
+  unit: days deviation from 1981-2010 average
+  rows: 496
+  columns:
+  - name: year
+    type: integer
+    description: Calendar year of the observation.
+  - name: event
+    type: string
+    description: 'Phenological event: first leaf or first bloom.'
+  - name: statistic
+    type: string
+    description: annual_mean is the yearly average deviation; 9yr_normal_curve is
+      EPA's smoothed 9-year curve.
+  - name: value
+    type: number
+    description: 'Value in the dataset''s unit (days). Years: deviation from the 1981-2010
+      average. Maps: change in first-event date between 1951-1960 and 2014-2023.'
+- file: first_leaf_bloom_deviation_alaska.csv
+  figure: Figure 2
+  figure_title: Figure 2. First Leaf and Bloom Dates in Alaska, 1950-2023
+  source_file: leaf-bloom_fig-2.csv
+  source_sha256: 73722c7ef58d69ec15d37d1877d8152fd1c55364829642d2541c20b910d88519
+  source_encoding: UTF-8
+  data_source: Schwartz, 2024
+  web_update: June 2024
+  unit: days deviation from 1981-2010 average
+  rows: 296
+  columns:
+  - name: year
+    type: integer
+    description: Calendar year of the observation.
+  - name: event
+    type: string
+    description: 'Phenological event: first leaf or first bloom.'
+  - name: statistic
+    type: string
+    description: annual_mean is the yearly average deviation; 9yr_normal_curve is
+      EPA's smoothed 9-year curve.
+  - name: value
+    type: number
+    description: 'Value in the dataset''s unit (days). Years: deviation from the 1981-2010
+      average. Maps: change in first-event date between 1951-1960 and 2014-2023.'
+- file: first_leaf_change_by_site.csv
+  figure: Figure 3
+  figure_title: Figure 3. Change in First Leaf Date Between 1951-1960 and 2014-2023
+  source_file: leaf-bloom_fig-3.csv
+  source_sha256: 3e1024f0c1731c950e104954a651b4d3d3bf6c6d21e5f1a412dec3df0fc7c93b
+  source_encoding: UTF-8
+  data_source: Schwartz, 2024
+  web_update: June 2024
+  unit: days
+  rows: 1278
+  columns:
+  - name: latitude
+    type: number
+    description: Site latitude in decimal degrees.
+  - name: longitude
+    type: number
+    description: Site longitude in decimal degrees.
+  - name: value
+    type: number
+    description: 'Value in the dataset''s unit (days). Years: deviation from the 1981-2010
+      average. Maps: change in first-event date between 1951-1960 and 2014-2023.'
+- file: first_bloom_change_by_site.csv
+  figure: Figure 4
+  figure_title: Figure 4. Change in First Bloom Date Between 1951-1960 and 2014-2023
+  source_file: leaf-bloom_fig-4.csv
+  source_sha256: 1262e773dc166913e73417b84f0164542b7525abaff3dccb4a1f58764421c90f
+  source_encoding: UTF-8
+  data_source: Schwartz, 2024
+  web_update: June 2024
+  unit: days
+  rows: 1278
+  columns:
+  - name: latitude
+    type: number
+    description: Site latitude in decimal degrees.
+  - name: longitude
+    type: number
+    description: Site longitude in decimal degrees.
+  - name: value
+    type: number
+    description: 'Value in the dataset''s unit (days). Years: deviation from the 1981-2010
+      average. Maps: change in first-event date between 1951-1960 and 2014-2023.'
